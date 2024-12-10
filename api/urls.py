@@ -1,12 +1,17 @@
 from django.urls import path
 from . import views
 from .views import LoginUserView
+from django.urls import path
+from .views import check_host
+
+
 
 urlpatterns = [
     path('api/register/', views.RegisterUserView.as_view(), name='register-api'),
     path('register/', views.register, name='register'),
     path('api/login/', LoginUserView.as_view(), name='login-api'),
     path('login/', views.login_page, name='login_page'),
+    path('check-host/', check_host),
     path('libraries/<int:library_id>/books/', views.library_books_html, name='library-books'),
     path('api/libraries/<int:library_id>/books/', views.LibraryBookListView.as_view(), name='library-books-api'),
     path('<int:library_id>/add-book/', views.add_book, name='add_book'),

@@ -392,5 +392,12 @@ class BookCategoryDetailView(APIView):
             return Response(status=status.HTTP_404_NOT_FOUND)
         category.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+    
+from django.http import HttpResponse
+
+def check_host(request):
+    return HttpResponse(f"Received HTTP_HOST: {request.META.get('HTTP_HOST')}")
+
+
 
 
