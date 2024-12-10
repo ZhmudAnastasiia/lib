@@ -20,7 +20,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-ALLOWED_HOSTS = ['.azurewebsites.net', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['library-dghha8czbhftgpfg.polandcentral-01.azurewebsites.net', '.azurewebsites.net', 'localhost', '127.0.0.1']
 
 
 # Quick-start development settings - unsuitable for production
