@@ -21,7 +21,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 ALLOWED_HOSTS = ['lib-gjezedazb8hfhxcx.polandcentral-01.azurewebsites.net',
-                 'library-dghha8czbhftgpfg.polandcentral-01.azurewebsites.net','localhost', '127.0.0.1']
+                 'library-dghha8czbhftgpfg.polandcentral-01.azurewebsites.net', 'localhost', '127.0.0.1']
 
 
 # Quick-start development settings - unsuitable for production
